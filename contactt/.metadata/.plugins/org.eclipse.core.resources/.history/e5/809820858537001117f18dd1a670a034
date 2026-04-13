@@ -1,0 +1,5 @@
+package com.example.contactt.model;
+
+public class Contact {
+
+}
