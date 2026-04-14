@@ -1,0 +1,12 @@
+<h1>New Contact | <a th:href="@{/list}"> Registered Contacts </a></h1> <hr>
+
+<form method="post" th:action="@{/save}" th:object="${contact}">
+  <label>Name</label>
+  <input type="text" th:field="*{name}"><br><br>
+  <label>Phone</label>
+  <select>
+  <option>MTN</option>
+  <option>Tigo</option>
+  </select> <input type="text" th:field="*{phone}"><br><br>
+  <input type="submit" value="Save Contact">
+</form>

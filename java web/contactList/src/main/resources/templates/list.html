@@ -1,0 +1,18 @@
+<h1>List of Contacts | <a th:href="@{/add}">Add New </a></h1> <hr>
+
+<table border="1">
+<tr>
+	<th>id</th>
+	<th>name</th>
+	<th>phone</th>
+	<th>action</th>
+</tr>
+<tr th:each="c:${list}"> 	
+
+	<td th:text="${c.id}"></td>
+	<td th:text="${c.name}"></td>
+	<td th:text="${c.phone}"></td>
+	<td> <a th:href="@{'/edit/'+ ${c.id}}">Edit</a> | <a th:href="@{'/delete/'+ ${c.id}}">Delete </a></td>
+</tr>
+
+</table>

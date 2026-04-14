@@ -1,0 +1,5 @@
+package com.barinda.student_management.dto;
+
+public class StudentDTO {
+
+}
